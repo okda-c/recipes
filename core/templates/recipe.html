@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <title>Рецепты</title>
+    <link href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>{{recipe_title}}</h1>
+    <a href="/">Вернуться</a>
+    <h2>Ингредиенты</h2>
+    <ul>
+        {% for ingredient in ingredients %}
+            <li>{{ ingredient }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Этапы приготовления</h2>
+    <ol>
+        <li>{{step1}}</li>
+        <li>{{step2}}</li>
+        <li>{{step3}}</li>
+        <li>{{step4}}</li>
+        <li>{{step5}}</li>
+    </ol>
+    
+</body>
+
+</html>
